@@ -13,13 +13,13 @@ const Root = () => {
   const style = {
     fontFamily: "Poppins",
     fontSize: "60px",
-    background: `linear-gradient(to right, #ff00cc, #3333cc)`, // Linear gradient background
-    WebkitBackgroundClip: 'text', // Clip the background to the text
-    color: 'transparent', // Make the text color transparent
-    opacity: visible ? 1 : 0, // Set opacity based on the 'visible' state
-    transform: `rotate(${hovered ? 0 : 720}deg) scale(${hovered ? 1.2 : 1})`, // Apply rotation and scale based on hover state
-    transformOrigin: "center center", // Set the transform origin to the center
-    transition: "transform 1s ease-in-out, opacity 1s ease-in-out", // Smooth transitions for rotation and opacity
+    background: `linear-gradient(to right, #ff00cc, #3333cc)`, 
+    WebkitBackgroundClip: 'text',
+    color: 'transparent', 
+    opacity: visible ? 1 : 0,
+    transform: `rotate(${hovered ? 0 : 720}deg) scale(${hovered ? 1.2 : 1})`,
+    transformOrigin: "center center", 
+    transition: "transform 1s ease-in-out, opacity 1s ease-in-out", 
   };
 
   const style2 = {
