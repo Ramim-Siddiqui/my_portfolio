@@ -23,7 +23,7 @@ const Root = () => {
   };
 
   const style2 = {
-    minHeight: "85vh",
+    minHeight: "86vh",
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
