@@ -4,7 +4,7 @@ import { useSpring, animated } from 'react-spring';
 
 const About = () => {
   const style2 = {
-    minHeight: "90vh",
+    minHeight: "87vh",
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'center',
