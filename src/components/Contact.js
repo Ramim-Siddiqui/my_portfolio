@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Form, Button } from 'react-bootstrap';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 
 const Contact = () => {
   const style2 = {
@@ -80,6 +82,19 @@ const Contact = () => {
             </Button>
           </Form>
         </Col>
+      </Row>
+      <Row>
+      <div style={{ display: 'flex', justifyContent: 'center', marginBottom: '20px' }}>
+            <a href="https://www.facebook.com/RamimAli2003" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
+              <FontAwesomeIcon icon={faFacebook} size="2x" style={{ color: 'white' }} />
+            </a>
+            <a href="https://www.instagram.com/ramimali2003?igsh=MW16NGd6ZHkwcjJvcQ==" target="_blank" rel="noopener noreferrer" style={{ marginRight: '20px' }}>
+              <FontAwesomeIcon icon={faInstagram} size="2x" style={{ color: 'white' }} />
+            </a>
+            <a href="https://www.linkedin.com/in/ramim-siddiqui-910404235" target="_blank" rel="noopener noreferrer">
+              <FontAwesomeIcon icon={faLinkedin} size="2x" style={{ color: 'white' }} />
+            </a>
+          </div>
       </Row>
     </Container>
   );
