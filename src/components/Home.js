@@ -1,7 +1,16 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
+import Image from "../assets/image/WhatsApp Image 2024-02-04 at 11.25.48_70a26a6a.jpg";
 
 const Home = () => {
+  const style = {
+    fontFamily: 'Poppins',
+    fontSize: '60px',
+    background: `linear-gradient(to right, #ff00cc, #3333cc)`,
+    WebkitBackgroundClip: 'text',
+    color: 'transparent',
+    textAlign: "left",
+  };
   const style2 = {
     minHeight: '90vh',
     display: 'flex',
@@ -12,6 +21,17 @@ const Home = () => {
     backgroundColor: 'black',
     overflow: 'hidden',
     margin: 0,
+  };
+  const style3 = {
+    fontFamily: "Poppins",
+    color: "white",
+    fontSize: "30px",
+  };
+  const imageStyle = {
+    borderRadius: '40%', 
+    width: '70%', 
+    height: '80%', 
+    marginLeft:"50px"
   };
 
   return (
@@ -52,8 +72,22 @@ const Home = () => {
           }}
         ></div>
       ))}
-      <Row>
-        <Col></Col>
+      <Row className='justify-content-center text-center'>
+        <Col xs={12} sm={12} md={12}>
+          <span style={style}>Hello, I'm Ramim Ali Siddiqui.</span>
+        </Col>
+      </Row>
+      <Row className="justify-content-right m-4" style={style3}>
+        <Col xs={12} sm={12} md={6} style={{ marginTop: "20vh" }}>
+          I'm a BSCS student at Sukkur IBA
+          University. I'm passionate about web development and have a solid
+          understanding of HTML, CSS, JavaScript, React.js, and Bootstrap.
+          I'm always eager to learn about new technologies and stay updated
+          in the ever-evolving world of web development.
+        </Col>
+        <Col xs={12} sm={12} md={6}>
+          <img src={Image} alt='' className="img-fluid" style={imageStyle} />
+        </Col>
       </Row>
     </Container>
   );
