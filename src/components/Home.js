@@ -10,7 +10,29 @@ const Home = () => {
     WebkitBackgroundClip: 'text',
     color: 'transparent',
     textAlign: "left",
+    animation: 'fadeIn 2s ease-in', // Add animation property
   };
+
+  // Define the animation keyframes
+  const keyframes = `
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(100%); // Start from bottom
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0); // Move to the top
+      }
+    }
+  `;
+
+ 
+  const animationStyle = {
+    ...style,
+    animation: 'fadeIn 2s ease-in',
+  };
+
   const style2 = {
     minHeight: '90vh',
     display: 'flex',
@@ -26,6 +48,7 @@ const Home = () => {
     fontFamily: "Poppins",
     color: "white",
     fontSize: "30px",
+    animation: 'fadeIn 2s ease-in',
   };
   const imageStyle = {
     borderRadius: '40%', 
@@ -60,6 +83,8 @@ const Home = () => {
               opacity: 1;
             }
           }
+          
+          ${keyframes} // Apply the animation keyframes
         `}
       </style>
       {[...Array(100)].map((_, index) => (
@@ -74,11 +99,11 @@ const Home = () => {
       ))}
       <Row className='justify-content-center text-center'>
         <Col xs={12} sm={12} md={12}>
-          <span style={style}>Hello, I'm Ramim Ali Siddiqui.</span>
+          <span style={animationStyle}>Hello, I'm Ramim Ali Siddiqui.</span>
         </Col>
       </Row>
       <Row className="justify-content-right m-4" style={style3}>
-        <Col xs={12} sm={12} md={6} style={{ marginTop: "20vh" }}>
+        <Col xs={12} sm={12} md={6} style={{ marginTop: "10vh" }}>
           I'm a BSCS student at Sukkur IBA
           University. I'm passionate about web development and have a solid
           understanding of HTML, CSS, JavaScript, React.js, and Bootstrap.
