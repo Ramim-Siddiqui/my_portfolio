@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Row, Col } from 'react-bootstrap';
-import Image from "../assets/image/WhatsApp Image 2024-02-04 at 11.25.48_70a26a6a.jpg";
+import Image from "../assets/image/_ef8c717e-0218-4a95-a964-c1b72b3c66ed.jpg";
 
 const Home = () => {
   const style = {
@@ -51,9 +51,9 @@ const Home = () => {
     animation: 'fadeIn 2s ease-in',
   };
   const imageStyle = {
-    borderRadius: '40%', 
+    borderRadius: '10%', 
     width: '70%', 
-    height: '80%', 
+    height: 'auto', 
     marginLeft:"50px"
   };
 
